@@ -1,0 +1,19 @@
+{
+  "name": "mongodb-service-zoo",
+  "version": "1.0.0",
+  "description": "Service HTTP pour recevoir les données de l'app Android et les insérer dans MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
+

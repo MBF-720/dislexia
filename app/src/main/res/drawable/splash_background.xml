@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:opacity="opaque">
+    <!-- Couleur de fond -->
+    <item android:drawable="@color/splash_background" />
+    
+    <!-- Logo centré avec taille réduite -->
+    <item android:gravity="center">
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/logo_splash" />
+    </item>
+</layer-list>
+

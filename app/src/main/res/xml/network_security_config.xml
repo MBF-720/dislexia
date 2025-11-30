@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Autoriser le trafic HTTP en clair pour le service MongoDB local -->
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Pour l'émulateur Android -->
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <!-- Pour les adresses IP locales (192.168.x.x, 127.0.0.1, etc.) -->
+        <domain includeSubdomains="true">127.0.0.1</domain>
+        <domain includeSubdomains="true">localhost</domain>
+    </domain-config>
+    
+    <!-- Autoriser HTTP pour toutes les adresses IP locales (développement uniquement) -->
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
+
